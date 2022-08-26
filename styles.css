@@ -17,6 +17,12 @@ body html {
     font-size: var(--font-size-small);
 }
 
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #C271FF !important;
+    transition: 0.3s;
+}
+
 .header {
     background-image: url("images/pic_1.jpg");
     background-repeat: no-repeat;
@@ -44,14 +50,6 @@ body html {
     padding-top: 7rem;
 }
 
-/*
-.hero-section .targets {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-*/
-
 .hero-section .text-cita {
     margin-bottom: 0.1rem;
 }
@@ -59,6 +57,13 @@ body html {
 .hero-section .btn-primary {
     background-color: #C271FF;
     border-color: #C271FF;
+}
+
+.hero-section .btn-primary:hover,
+.hero-section .btn-primary:focus {
+    background-color: #C271FF;
+    border-color: #C271FF;
+    opacity: 0.9;
 }
 
 .hero-section h2 .color {
