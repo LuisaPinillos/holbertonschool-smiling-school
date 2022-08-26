@@ -69,3 +69,9 @@ body html {
 .hero-section h2 .color {
     color: #C271FF;
 }
+
+/* -- carousel -- */
+
+.carousel .carousel-inner {
+    background-color: #C271FF;
+}
