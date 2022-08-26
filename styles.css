@@ -1,0 +1,66 @@
+/* Custom Properties */
+:root {
+    --font-family: 'Source Sans Pro' 'Coyni';
+    --font-size: 1rem;
+    --font-size-title: 6.8rem;
+    --font-size-small: 0.7rem;
+    --font-size-title-small: 3.5rem;
+    --font-size: 1rem;
+
+}
+
+body html {
+    font-family: var(--font-family);
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: var(--font-size-small);
+}
+
+.header {
+    background-image: url("images/pic_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px){
+    .hero-section h1 {
+        font-size: var(--font-size-title);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .hero-section h1 {
+        font-size: var(--font-size-title-small);
+    }
+}
+
+.hero-section {
+    padding-top: 10rem;
+}
+
+.hero-section h2 {
+    padding-top: 7rem;
+}
+
+/*
+.hero-section .targets {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+*/
+
+.hero-section .text-cita {
+    margin-bottom: 0.1rem;
+}
+
+.hero-section .btn-primary {
+    background-color: #C271FF;
+    border-color: #C271FF;
+}
+
+.hero-section h2 .color {
+    color: #C271FF;
+}
