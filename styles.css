@@ -7,6 +7,9 @@
     --font-size-title-small: 3.5rem;
     --font-size: 1rem;
 
+    --bg-primary: #C271FF;
+    --opacity-buttons: 0.9;
+
 }
 
 body html {
@@ -19,7 +22,7 @@ body html {
 
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #C271FF !important;
+    color: var(--bg-primary) !important;
     transition: 0.3s;
 }
 
@@ -55,23 +58,23 @@ body html {
 }
 
 .hero-section .btn-primary {
-    background-color: #C271FF;
-    border-color: #C271FF;
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
 }
 
 .hero-section .btn-primary:hover,
 .hero-section .btn-primary:focus {
-    background-color: #C271FF;
-    border-color: #C271FF;
-    opacity: 0.9;
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+    opacity: var(--opacity-buttons);
 }
 
 .hero-section h2 .color {
-    color: #C271FF;
+    color: var(--bg-primary);
 }
 
 /* -- carousel -- */
 
 .carousel .carousel-inner {
-    background-color: #C271FF;
+    background-color: var(--bg-primary);
 }
