@@ -1,20 +1,25 @@
 /* Custom Properties */
 :root {
     --font-family: 'Source Sans Pro' 'Coyni';
-    --font-size: 1rem;
     --font-size-title: 6.8rem;
-    --font-size-small: 0.7rem;
     --font-size-title-small: 3.5rem;
-    --font-size: 1rem;
+    --font-size: 1rem;     /* 16px*/
+    --font-size-small: 0.7rem;  /* 12px*/
 
     --bg-primary: #C271FF;
     --opacity-buttons: 0.9;
+
+    --font-size-big: 1.38rem; /*22 px*/
+    --font-size-videocards: 0.85rem;  /* 14px*/
+    --font-weight-semibold: 500;
 
 }
 
 body html {
     font-family: var(--font-family);
 }
+
+/* -- Hero section -- */
 
 .navbar-nav .nav-item .nav-link {
     font-size: var(--font-size-small);
@@ -31,18 +36,6 @@ body html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-@media screen and (min-width: 768px){
-    .hero-section h1 {
-        font-size: var(--font-size-title);
-    }
-}
-
-@media screen and (max-width: 767px){
-    .hero-section h1 {
-        font-size: var(--font-size-title-small);
-    }
 }
 
 .hero-section {
@@ -73,8 +66,72 @@ body html {
     color: var(--bg-primary);
 }
 
-/* -- carousel -- */
+/* -- Carousel Quotes Section --*/
 
-.carousel .carousel-inner {
+.carousel #carousel-quotes {
     background-color: var(--bg-primary);
+}
+
+#carousel-quotes .text-quote {
+    font-size: var(--font-size-big);
+}
+
+/* -- Carousel videos Section --*/
+
+.carousel-videos .control-prev,
+.carousel-videos .control-next {
+    filter: invert(100%);
+}
+.carousel-videos .text-video {
+    font-size: var(--font-size-videocards);
+}
+
+.carousel-videos .person_name ,
+.carousel-videos .minutes {
+    font-size: var(--font-size-videocards);
+    color: var(--bg-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+.carousel-videos h2 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.carousel-videos h2 .color {
+    color: var(--bg-primary);
+}
+
+.carousel-videos .img_play {
+    z-index: 1;
+}
+/* --- responsive --- */
+
+@media screen and (min-width: 769px) {
+    .hero-section h1 {
+        font-size: var(--font-size-title);
+    }
+
+    .card {
+        margin: 0.5rem;
+        width: calc(100%/5.5);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section h1 {
+        font-size: var(--font-size-title-small);
+    }
+
+    .card {
+        margin: 0.5rem;
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        margin: 0.5rem;
+        width: calc(100%/2);
+    }
 }
