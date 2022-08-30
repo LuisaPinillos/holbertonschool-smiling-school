@@ -1,4 +1,5 @@
 /* Custom Properties */
+
 :root {
     --font-family: 'Source Sans Pro' 'Coyni';
     --font-size-title: 6.8rem;
@@ -6,11 +7,12 @@
     --font-size: 1rem;     /* 16px*/
     --font-size-small: 0.7rem;  /* 12px*/
 
+    --section-padding: 4rem;
     --bg-primary: #C271FF;
     --opacity-buttons: 0.9;
 
     --font-size-big: 1.38rem; /*22 px*/
-    --font-size-videocards: 0.85rem;  /* 14px*/
+    --font-size-cards: 0.85rem;  /* 14px*/
     --font-weight-semibold: 500;
 
 }
@@ -25,7 +27,6 @@ body html {
     font-size: var(--font-size-small);
 }
 
-
 .navbar-nav .nav-item .nav-link:hover {
     color: var(--bg-primary) !important;
     transition: 0.3s;
@@ -36,6 +37,10 @@ body html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+h2 .color {
+    color: var(--bg-primary);
 }
 
 .hero-section {
@@ -62,10 +67,6 @@ body html {
     opacity: var(--opacity-buttons);
 }
 
-.hero-section h2 .color {
-    color: var(--bg-primary);
-}
-
 /* -- Carousel Quotes Section --*/
 
 .carousel #carousel-quotes {
@@ -78,12 +79,13 @@ body html {
 
 /* -- Carousel videos Section --*/
 
+.card-text {
+    font-size: var(--font-size-cards);
+}
+
 .carousel-videos .control-prev,
 .carousel-videos .control-next {
     filter: invert(100%);
-}
-.carousel-videos .text-video {
-    font-size: var(--font-size-videocards);
 }
 
 .carousel-videos .person_name ,
@@ -93,18 +95,33 @@ body html {
     font-weight: var(--font-weight-semibold);
 }
 
-.carousel-videos h2 {
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+.carousel-videos {
+    padding: var(--section-padding) 0;
 }
 
-.carousel-videos h2 .color {
-    color: var(--bg-primary);
+/* -- Membership Section --*/
+
+.membership {
+    background-color: #08142c;
+    padding: var(--section-padding);
 }
 
-.carousel-videos .img_play {
-    z-index: 1;
+.membership .card-img-top  {
+    width: 64px;
 }
+
+.membership .btn-primary {
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+}
+
+.membership .btn-primary:hover,
+.membership .btn-primary:focus {
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+    opacity: var(--opacity-buttons);
+}
+
 /* --- responsive --- */
 
 @media screen and (min-width: 769px) {
@@ -115,6 +132,10 @@ body html {
     .card {
         margin: 0.5rem;
         width: calc(100%/5);
+    }
+
+    .membership .card {
+        width: 100%;
     }
 }
 
@@ -133,6 +154,10 @@ body html {
     .card {
         margin: 0.5rem;
         width: calc(100%/3);
+    }
+
+    .membership .card {
+        width: 100%;
     }
 }
 
