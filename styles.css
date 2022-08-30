@@ -106,7 +106,8 @@ h2 .color {
 
 .membership {
     background-color: #08142c;
-    padding: var(--section-padding);
+    padding: 0 var(--section-padding);
+    padding-top: var(--section-padding);
 }
 
 .membership .card-img-top  {
@@ -123,6 +124,13 @@ h2 .color {
     background-color: var(--bg-primary);
     border-color: var(--bg-primary);
     opacity: var(--opacity-buttons);
+}
+
+/* -- Footer --*/
+
+footer {
+    background-color: #08142c;
+    padding-top: var(--section-padding);
 }
 
 /* --- responsive --- */
