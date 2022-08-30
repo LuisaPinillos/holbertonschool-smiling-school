@@ -2,8 +2,8 @@
 
 :root {
     --font-family: 'Source Sans Pro' 'Coyni';
-    --font-size-title: 6.8rem;
-    --font-size-title-small: 3.5rem;
+    --font-size-title: 6.8rem; /* 108px */
+    --font-size-title-small: 3.5rem; /* 56 */
     --font-size: 1rem;     /* 16px*/
     --font-size-small: 0.7rem;  /* 12px*/
 
@@ -47,7 +47,9 @@ h2 .color {
     padding-top: 10rem;
 }
 
-.hero-section h2 {
+.hero-section h2,
+.hero-section-pricing,
+.hero-section-pricing h2 {
     padding-top: 7rem;
 }
 
@@ -81,11 +83,6 @@ h2 .color {
 
 .card-text {
     font-size: var(--font-size-cards);
-}
-
-.control-prev,
-.control-next {
-    filter: invert(100%);
 }
 
 .carousel-videos .person_name ,
@@ -181,4 +178,21 @@ footer {
         margin: 0.5rem;
         width: calc(100%/2);
     }
+}
+
+/* ---- PRICING PAGE ---*/
+
+.header-pricing {
+    background-image: url("images/pic_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section-pricing h1 {
+    font-size: 2rem;
+}
+
+.hero-section-pricing h2 {
+    font-size: var(--font-size-title-small);
 }
