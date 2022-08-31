@@ -44,6 +44,7 @@ body html {
     background-size: cover;
 }
 
+h1 .color,
 h2 .color {
     color: var(--bg-primary);
 }
@@ -259,4 +260,21 @@ footer {
     .hero-section-pricing .logo-title {
         width: 150px;
     }
+}
+
+/* ---- COURSES PAGE ---*/
+
+.header-courses {
+    background-image: url("images/pic_3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section-courses h1 {
+    font-size: 2rem;
+}
+
+.hero-courses-title {
+    max-width: 486px;
 }
