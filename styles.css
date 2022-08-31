@@ -15,6 +15,9 @@
     --font-size-cards: 0.85rem;  /* 14px*/
     --font-weight-semibold: 500;
 
+    /* pricing */
+    --font-size-table: 1.125rem;
+
 }
 
 body html {
@@ -43,13 +46,12 @@ h2 .color {
     color: var(--bg-primary);
 }
 
+.hero-section-pricing,
 .hero-section {
     padding-top: 10rem;
 }
 
-.hero-section h2,
-.hero-section-pricing,
-.hero-section-pricing h2 {
+.hero-section h2 {
     padding-top: 7rem;
 }
 
@@ -195,4 +197,45 @@ footer {
 
 .hero-section-pricing h2 {
     font-size: var(--font-size-title-small);
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.box-price .price {
+    font-size: 2.75rem;
+}
+
+.box-price .permonth,
+.table-title {
+    font-size: var(--font-size-small);
+}
+
+.table .text-table {
+    font-size: var(--font-size-table);
+}
+
+.box-price .btn-primary {
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+}
+
+.box-price .btn-primary:hover,
+.box-price .btn-primary:focus {
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+    opacity: var(--opacity-buttons);
+}
+
+@media screen and (max-width: 576px) {
+    .hero-section-pricing h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section-pricing .logo-smile-title {
+        width: 30px;
+    }
+
+    .hero-section-pricing .logo-title {
+        width: 150px;
+    }
 }
