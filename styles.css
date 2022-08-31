@@ -237,10 +237,6 @@ footer {
 
 /* -- Fqa Section --*/
 
-.fqa-section {
-    padding-bottom: 4rem;
-}
-
 .fqa-section .fqa-text {
     font-size: var(--font-size-cards);
 }
