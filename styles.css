@@ -3,7 +3,8 @@
 :root {
     --font-family: 'Source Sans Pro' 'Coyni';
     --font-size-title: 6.8rem; /* 108px */
-    --font-size-title-small: 3.5rem; /* 56 */
+    --font-size-title-medium: 3.5rem; /* 56px */
+    --font-size-title-small: 2rem; /* 32px */
     --font-size: 1rem;     /* 16px*/
     --font-size-small: 0.7rem;  /* 12px*/
 
@@ -11,9 +12,10 @@
     --bg-primary: #C271FF;
     --opacity-buttons: 0.9;
 
-    --font-size-big: 1.38rem; /*22 px*/
+    --font-size-big: 1.38rem; /* 22px*/
     --font-size-cards: 0.85rem;  /* 14px*/
     --font-weight-semibold: 500;
+    --margin-cards: 0.5rem;
 
     /* pricing */
     --font-size-table: 1.125rem;
@@ -136,14 +138,6 @@ footer {
 
 /* --- responsive HOMEPAGE --- */
 
-@media screen and (min-width: 992px) {
-    .carousel-videos .card,
-    .latest_video_section .card {
-        margin: 0.5rem;
-        width: calc(100%/5.5);
-    }
-}
-
 @media screen and (min-width: 769px) {
     .hero-section h1 {
         font-size: var(--font-size-title);
@@ -151,8 +145,8 @@ footer {
 
     .carousel-videos .card,
     .latest_video_section .card {
-        margin: 0.5rem;
-        width: calc(100%/5);
+        margin: var(--margin-cards);
+        width: calc(100%/5.4);
     }
 
     .membership .card {
@@ -162,12 +156,12 @@ footer {
 
 @media screen and (max-width: 768px) {
     .hero-section h1 {
-        font-size: var(--font-size-title-small);
+        font-size: var(--font-size-title-medium);
     }
 
     .carousel-videos .card,
     .latest_video_section .card {
-        margin: 0.5rem;
+        margin: var(--margin-cards);
         width: calc(100%/3);
     }
 
@@ -179,7 +173,7 @@ footer {
 @media screen and (max-width: 576px) {
     .carousel-videos .card,
     .latest_video_section .card {
-        margin: 0.5rem;
+        margin: var(--margin-cards);
         width: calc(100%/2);
     }
 }
@@ -196,19 +190,19 @@ footer {
 }
 
 .hero-section-pricing {
-    padding-top: 10rem;
-    padding-bottom: 3rem;
+    padding-top: 13rem;
+    padding-bottom: var(--section-padding);
 }
 
 .hero-section-pricing h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-title-small);
 }
 
 .fqa-section h2, /* Title fqa section */
 .hero-section-pricing h2 { /* Title Hero Section */
-    font-size: var(--font-size-title-small);
-    padding-top: 4rem;
-    margin-bottom: 5rem;
+    font-size: var(--font-size-title-medium);
+    padding-top: 5rem;
+    margin-bottom: var(--section-padding);
 }
 
 .box-price .price {
@@ -272,7 +266,7 @@ footer {
 }
 
 .hero-section-courses h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-title-small);
 }
 
 .hero-courses-title {
