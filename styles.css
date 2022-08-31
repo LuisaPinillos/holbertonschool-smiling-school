@@ -24,6 +24,8 @@ body html {
     font-family: var(--font-family);
 }
 
+/* ---- HOMEPAGE ---- */
+
 /* -- Hero section -- */
 
 .navbar-nav .nav-item .nav-link {
@@ -46,7 +48,6 @@ h2 .color {
     color: var(--bg-primary);
 }
 
-.hero-section-pricing,
 .hero-section {
     padding-top: 10rem;
 }
@@ -81,7 +82,7 @@ h2 .color {
     font-size: var(--font-size-big);
 }
 
-/* -- Carousel videos Section --*/
+/* -- Carousel Videos Section --*/
 
 .card-text {
     font-size: var(--font-size-cards);
@@ -132,7 +133,7 @@ footer {
     padding-top: var(--section-padding);
 }
 
-/* --- responsive --- */
+/* --- responsive HOMEPAGE --- */
 
 @media screen and (min-width: 992px) {
     .carousel-videos .card,
@@ -184,6 +185,8 @@ footer {
 
 /* ---- PRICING PAGE ---*/
 
+/* -- Hero Section -- */
+
 .header-pricing {
     background-image: url("images/pic_2.jpg");
     background-repeat: no-repeat;
@@ -191,11 +194,17 @@ footer {
     background-size: cover;
 }
 
+.hero-section-pricing {
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+
 .hero-section-pricing h1 {
     font-size: 2rem;
 }
 
-.hero-section-pricing h2 {
+.fqa-section h2, /* Title fqa section */
+.hero-section-pricing h2 { /* Title Hero Section */
     font-size: var(--font-size-title-small);
     padding-top: 4rem;
     margin-bottom: 5rem;
@@ -225,6 +234,22 @@ footer {
     border-color: var(--bg-primary);
     opacity: var(--opacity-buttons);
 }
+
+/* -- Fqa Section --*/
+
+.fqa-section {
+    padding-bottom: 4rem;
+}
+
+.fqa-section .fqa-text {
+    font-size: var(--font-size-cards);
+}
+
+.fqa-section .fqa-subtitle {
+    font-size: var(--font-size);
+}
+
+/* --- responsive PRICING --- */
 
 @media screen and (max-width: 576px) {
     .hero-section-pricing h1 {
