@@ -1,11 +1,10 @@
 # 0x0B. Implement a design with bootstrap
 
-In this project, 3 web pages were maked with 
+In this project, 3 web pages have accessibility and responsive design for Smartphones, Tablets and Large screens.
+These pages were maked with:
 
 - HTML
 - CSS
-- Accessibility
-- Responsive design 
 - Bootstrap 4.4.1.
 
 ## The objective
