@@ -1,6 +1,6 @@
 # 0x0B. Implement a design with bootstrap
 
-## The objective project
+## Objective project:
 
 Have fully functional 3 web pages that look the same as the design.
 
@@ -10,7 +10,7 @@ These pages with accessibility and responsive design for Smartphones, Tablets an
 - CSS
 - Bootstrap 4.4.1.
 
-## Design
+## Design:
 
 This webpages have been designed by Nicolas Philippot, UI/UX designer. You can see the designs on Figma.
 Links here:
