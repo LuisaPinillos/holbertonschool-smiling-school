@@ -10,6 +10,7 @@
 
     --section-padding: 4rem;
     --bg-primary: #C271FF;
+    --bg-secundary: #D195FF;
     --opacity-buttons: 0.9;
 
     --font-size-big: 1.38rem; /* 22px*/
@@ -17,7 +18,7 @@
     --font-weight-semibold: 500;
     --margin-cards: 0.5rem;
 
-    /* pricing */
+    /* pricing page*/
     --font-size-table: 1.125rem;
 
 }
@@ -271,4 +272,73 @@ footer {
 
 .hero-courses-title {
     max-width: 486px;
+}
+
+.list-resoult-section .person_name,
+.list-resoult-section .minutes {
+    font-size: var(--font-size-cards);
+    color: var(--bg-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* -- Search Filters Section -- */
+
+.search-filters-section  {
+    background-color: var(--bg-primary);
+}
+
+.form-group #s-input,
+.form-group #topic,
+.form-group #sortby {
+    background-color: var(--bg-secundary);
+    color: #ffff;
+}
+
+.form-group #s-input::placeholder {
+    color: #ffff;
+}
+
+#topic .select-option,
+#sortby .select-option {
+    color: #000000;
+}
+
+.navbar-form .label-form {
+    font-size: var(--font-size-small);
+}
+
+/* -- List of result section --*/
+
+.list-resoult-section .number-videos {
+    font-size: var(--font-size);
+}
+
+/* -- responsive --*/
+
+@media screen and (min-width: 992px){
+    .list-resoult-section .card {
+        margin: 0.5rem;
+        max-width: 255px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .list-resoult-section .card {
+        margin: 0.5rem;
+        max-width: 210px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .list-resoult-section .card {
+        margin: 0.5rem;
+        max-width: 239px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .list-resoult-section .card {
+        margin: 0.5rem;
+        max-width: 345px;
+    }
 }
