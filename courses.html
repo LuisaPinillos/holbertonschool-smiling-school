@@ -25,7 +25,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="holberton_school-icon-menu text-white"></span>
                 </button>
-                <a class="header-logo d-flex d-flex flex-column flex-sm-row mx-auto mt-3" href="#">
+                <a class="header-logo d-flex d-flex flex-column flex-sm-row mx-auto mt-3" href="homepage.html">
                     <img class="align-self-center mb-2 mr-3" src="images/smile_off.png" alt="logo" width="36">
                     <img src="images/logo.png" alt="logo" width="112">
                 </a>
@@ -38,7 +38,7 @@
                       <a class="nav-link text-white" href="pricing.html">PRICING</a>
                     </li>
                     <li class="nav-item text-center">
-                      <a class="nav-link text-white" href="homepage.html">LOGIN</a>
+                      <a class="nav-link text-white" href="#">LOGIN</a>
                     </li>
                   </ul>
                 </div>
@@ -58,8 +58,9 @@
     <main>
         <!-- Search filters Section-->
         <section class="search-filters-section">
+            <h2 class="d-none">Search filters</h2>
             <div class="container">
-                <nav>
+                <nav aria-label="nav-search">
                     <form class="navbar-form form-row py-4">
                         <div class="form-group col-12 col-sm-12 col-md-4">
                             <label for="s-input" class="label-form text-white font-weight-bold">KEYWORDS</label>
@@ -70,7 +71,7 @@
                         <div class="form-group column dropdown col-12 col-sm-6 col-md-4">
                             <label for="Novice" class="label-form text-white font-weight-bold">TOPIC</label>
                             <div>
-                                <select class="form-control border-top-0 border-right-0 border-left-0" id="topic">
+                                <select class="form-control border-top-0 border-right-0 border-left-0" id="topic" aria-label="dropdown-options">
                                     <option value="novice" class="select-option bg-white">Novice</option>
                                     <option value="intermediate" class="select-option bg-white">Intermediate</option>
                                     <option value="expert" class="select-option bg-white">Expert</option>
@@ -80,7 +81,7 @@
                         <div class="form-group column dropdown col-12 col-sm-6 col-md-4">
                             <label for="MostPopular" class="label-form text-white font-weight-bold">SORT BY</label>
                             <div>
-                                <select class="form-control border-top-0 border-right-0 border-left-0" id="sortby">
+                                <select class="form-control border-top-0 border-right-0 border-left-0" id="sortby" aria-label="dropdown-options">
                                     <option value="mostpopular" class="select-option bg-white">Most Poular</option>
                                     <option value="mostrecent" class="select-option bg-white">Most Recent</option>
                                     <option value="mostviewed" class="select-option bg-white">Most Viewed</option>
@@ -93,6 +94,7 @@
         </section>
         <!--  List of result section -->
         <section class="list-resoult-section">
+            <h2 class="d-none">List of result</h2>
             <div class="container pb-5">
                 <p class="number-videos text-muted my-4">11 videos</p>
                 <div class="d-flex flex-wrap justify-content-center justify-content-sm-start">
@@ -102,7 +104,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -124,7 +126,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -146,7 +148,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -168,7 +170,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -190,7 +192,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -212,7 +214,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -234,7 +236,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -256,7 +258,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -278,7 +280,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -300,7 +302,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -322,7 +324,7 @@
                             <img src="images/play.png" alt="play" width="64" class="align-self-center play-overlay"/>
                         </div>
                         <div class="card-body px-2">
-                            <h6 class="card-title font-weight-bold">Natural Smile</h6>
+                            <h3 class="h6 card-title font-weight-bold">Natural Smile</h3>
                             <p class="card-text text-muted">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
                             <img class="rounded-circle mb-2 mr-lg-2" src="images/profile_1.jpg" alt="profile 1" width="40">
                             <span class="person_name">Phillip Massey</span>
@@ -352,9 +354,9 @@
                     <img src="images/logo.png" alt="smile logo" width="112">
                 </div>
                 <div>
-                    <span class="text-white mr-2 holberton_school-icon-ic_facebook"></span>
-                    <span class="text-white mr-2 holberton_school-icon-ic_twitter"></span>
-                    <span class="text-white mr-2 holberton_school-icon-ic_instagram"></span>
+                    <span class="text-white mr-2 holberton_school-icon-ic_facebook"><a aria-label="Facebook" href=""></a></span>
+                    <span class="text-white mr-2 holberton_school-icon-ic_twitter"><a aria-label="Twitter" href=""></a></span>
+                    <span class="text-white mr-2 holberton_school-icon-ic_instagram"><a aria-label="Instagram" href=""></a></span>
                 </div>
             </div>
         </div>
